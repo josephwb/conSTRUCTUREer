@@ -4,6 +4,7 @@
 *.Rapp.history
 .Rhistory
 *.o
+*.log
 STRUCTUREify
 conSTRUCTUREer
 
