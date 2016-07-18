@@ -1,0 +1,9 @@
+# ignore certain files
+.DS_Store
+.~*
+*.Rapp.history
+.Rhistory
+*.o
+STRUCTUREify
+conSTRUCTUREer
+
