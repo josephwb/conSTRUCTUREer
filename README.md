@@ -1,7 +1,7 @@
 #### STRUCTUREify
 
 ##### Overview
-Sample SNPs randomly across multiple phylip alignments to construct STRUCTURE input files.
+Sample SNPs randomly across multiple phylip alignments to construct replicated STRUCTURE input files.
 
 ##### Compilation
 To compile, type the following in a unix prompt:
