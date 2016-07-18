@@ -6,7 +6,7 @@ Sample SNPs randomly across multiple phylip alignments to construct replicated S
 ##### Compilation
 To compile, type the following in a unix prompt:
 
-	g++ -Wall STRUCTUREify.cpp -std=c++11 -O3 -o STRUCTUREify
+	make
 
 ##### Usage
 
