@@ -1,9 +1,9 @@
-OBJS = main.o utils.o write_results.o
+OBJS = main.o utils.o write_results.o info.o
 
 CC = g++
 
-CFLAGS = -Wall -c -m64 -std=c++11 -O3 
-LFLAGS = -Wall -m64 -std=c++11 
+CFLAGS = -Wall -c -m64 -std=c++11 -O3
+LFLAGS = -Wall -m64 -std=c++11
 
 STRUCTUREify: $(OBJS)
 	$(CC) $(LFLAGS) $(OBJS) -o STRUCTUREify
@@ -16,6 +16,9 @@ utils.o: utils.cpp utils.h
 
 write_results.o: write_results.cpp write_results.h
 	$(CC) $(CFLAGS) write_results.cpp
+
+info.o: info.cpp info.h
+	$(CC) $(CFLAGS) info.cpp
 
 clean:
 	rm -rf *.o STRUCTUREify
