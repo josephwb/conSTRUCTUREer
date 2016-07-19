@@ -2,8 +2,8 @@ OBJS = main.o utils.o write_results.o info.o
 
 CC = g++
 
-CFLAGS = -Wall -c -m64 -std=c++11 -O3
-LFLAGS = -Wall -m64 -std=c++11
+CFLAGS = -Wall -c -std=c++11 -O3
+LFLAGS = -Wall -std=c++11
 
 STRUCTUREify: $(OBJS)
 	$(CC) $(LFLAGS) $(OBJS) -o STRUCTUREify
