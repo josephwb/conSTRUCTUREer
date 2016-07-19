@@ -8,3 +8,13 @@
 STRUCTUREify
 conSTRUCTUREer
 
+# netbeans
+nbproject
+
+# Eclipse files
+.cproject
+.project
+.classpath
+.settings
+.metadata
+
