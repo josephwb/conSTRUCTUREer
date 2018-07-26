@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <vector>
 #include <sstream>
+#include <fstream>
 
 using namespace std;
 
@@ -38,4 +39,16 @@ string prune_taxon_label (string & label) {
     }
     //cout << "; New label: " << label << endl;
     return label;
+}
+
+vector <string> read_input_list_file (string const& filename) {
+    vector <string> fnames;
+    string line;
+    ifstream ifs(filename.c_str());
+    while (getline(ifs, line)) {
+        if (!line.empty()) {
+            fnames.push_back(line);
+        }
+    }
+    return fnames;
 }

@@ -119,6 +119,10 @@ void process_args(int argc, char *argv[], vector <string> & files, int & seed, i
                     i++;
                 }
                 continue;
+            } else if (temp == "-l") {
+                i++;
+                string fname = argv[i];
+                files = read_input_list_file(fname);
             } else if (temp == "-x") {
                 i++;
                 seed = stoi(argv[i]);
@@ -248,8 +252,3 @@ void sample_sites (vector < map <string, string> > & results, map <string, strin
     // keep for logging purposes
     sampled_sites.push_back(sites);
 }
-
-
-
-
-

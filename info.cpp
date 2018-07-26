@@ -28,6 +28,8 @@ void usage () {
         "./STRUCTUREify -f <files> [-x seed] [-n nreps] [-o outprefix] [-p popmap] [-v]" << endl << endl <<
         "where:" << endl << 
         "- '-f <files>' is required and can make use of wildcards e.g. '-f *.phylip'" << endl <<
+        "- '-l <list>' is a file containing names of input files, 1 per line" << endl <<
+        "    - use this option if you get a 'Argument list too long' error message" << endl <<
         "- other args are optional:" << endl <<
         "    -x: random number seed (default = clock)" << endl <<
         "    -n: number of replicates to perform (default = 1)" << endl <<
@@ -36,5 +38,4 @@ void usage () {
         "               INDIVIDUAL_ID	POPULATION_ID" << endl <<
         "        turns on STRUCTURE format for output (default = phylip)" << endl <<
         "    -v: turn on verbose output (default = false)" << endl << endl;
-        
 }
