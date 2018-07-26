@@ -5,6 +5,7 @@
 .Rhistory
 *.o
 *.log
+*.str
 STRUCTUREify
 conSTRUCTUREer
 
