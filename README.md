@@ -29,3 +29,14 @@ where:
 For help, type:
 
 	./STRUCTUREify -h
+
+##### Example (5 reps, using only 2 alignment files)
+
+Using wildcards:
+
+    ./STRUCTUREify -f *.phylip -p Pop_mapping.txt -n 5
+
+Using a 'file list' (i.e. when the number of files is so large that bash throws the error 'Argument list too long'):
+
+    ./STRUCTUREify -l flist.txt -p Pop_mapping.txt -n 5
+
